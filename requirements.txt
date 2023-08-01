@@ -1,0 +1,6 @@
+transformers==4.26.1
+datasets~=2.11.0
+accelerate~=0.18.0
+gensim~=4.3.1
+tensorboard
+h5py~=3.8.0

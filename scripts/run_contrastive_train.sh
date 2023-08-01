@@ -1,0 +1,29 @@
+export CURRENT_DIR=${PWD}
+OMP_NUM_THREADS=1 TOKENIZERS_PARALLELISM=false torchrun \
+    --nproc_per_node 2 contrastive_train.py \
+    --output_dir outputs/contrastive_zrigf \
+    --text_model_name_or_path facebook/bart-large \
+    --vision_model_name_or_path google/vit-base-patch16-224-in21k \
+    --dataset_name "$CURRENT_DIR"/data/coco \
+    --image_chat_name data/image_chat \
+    --caption_column caption \
+    --remove_unused_columns=False \
+    --freeze_text_model=True \
+    --do_train  --do_eval \
+    --per_device_train_batch_size="64" \
+    --per_device_eval_batch_size="512" \
+    --learning_rate="5e-5" --warmup_ratio=0.1 --weight_decay 0.05 \
+    --lr_scheduler_type='linear' \
+    --num_train_epochs="20" \
+    --preprocessing_num_workers="8" \
+    --dataloader_num_workers="8" \
+    --dataloader_drop_last=True \
+    --save_strategy="epoch" \
+    --evaluation_strategy="epoch" \
+    --load_best_model_at_end=True \
+    --metric_for_best_model="eval_loss" \
+    --overwrite_output_dir \
+    --tf32=True \
+    --ddp_find_unused_parameters=False \
+    --torch_compile=True \
+    --seed 42

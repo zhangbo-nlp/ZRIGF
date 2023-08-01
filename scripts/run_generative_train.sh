@@ -1,0 +1,16 @@
+accelerate launch generative_train.py \
+    --output_dir outputs/zrigf_reddit \
+    --contrastive_model_path outputs/contrastive_zrigf \
+    --train_file outputs/contrastive_zrigf/vokens/reddit_data/train.json \
+    --test_file outputs/contrastive_zrigf/vokens/reddit_data/test.json \
+    --per_device_train_batch_size="32" \
+    --per_device_eval_batch_size="32" \
+    --num_train_epochs="10" \
+    --learning_rate="2e-5" \
+    --gradient_accumulation_steps="4" \
+    --num_beams="3" \
+    --label_smoothing_factor="0.1" \
+    --preprocessing_num_workers="4" \
+    --seed="42" \
+    --checkpointing_steps='epoch' \
+    --with_tracking
