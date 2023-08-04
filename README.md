@@ -1,6 +1,6 @@
 # ZRIGF
 
-This is the code for ZRIGF: An Innovative Multimodal Framework for Zero-Resource Image-Grounded Dialogue Generation. 
+This is the code for [ZRIGF: An Innovative Multimodal Framework for Zero-Resource Image-Grounded Dialogue Generation.](https://arxiv.org/abs/2308.00400)
 
 ## Requirements
 
