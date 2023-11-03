@@ -8,21 +8,19 @@ If you use any source code included in this repo in your work, please cite the f
 
 ```
 @inproceedings{10.1145/3581783.3611810,
-author = {Zhang, Bo and Wang, Jian and Ma, Hui and Xu, Bo and Lin, Hongfei},
-title = {ZRIGF: An Innovative Multimodal Framework for Zero-Resource Image-Grounded Dialogue Generation},
-year = {2023},
-isbn = {9798400701085},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3581783.3611810},
-doi = {10.1145/3581783.3611810},
-abstract = {Image-grounded dialogue systems benefit greatly from integrating visual information, resulting in high-quality response generation. However, current models struggle to effectively utilize such information in zero-resource scenarios, mainly due to the disparity between image and text modalities. To overcome this challenge, we propose an innovative multimodal framework, called ZRIGF, which assimilates image-grounded information for dialogue generation in zero-resource situations. ZRIGF implements a two-stage learning strategy, comprising contrastive pre-training and generative pre-training. Contrastive pre-training includes a text-image matching module that maps images and texts into a unified encoded vector space, along with a text-assisted masked image modeling module that preserves pre-training visual features and fosters further multimodal feature alignment. Generative pre-training employs a multimodal fusion module and an information transfer module to produce insightful responses based on harmonized multimodal representations. Comprehensive experiments conducted on both text-based and image-grounded dialogue datasets demonstrate ZRIGF's efficacy in generating contextually pertinent and informative responses. Furthermore, we adopt a fully zero-resource scenario in the image-grounded dialogue dataset to demonstrate our framework's robust generalization capabilities in novel domains.},
-booktitle = {Proceedings of the 31st ACM International Conference on Multimedia},
-pages = {5464–5473},
-numpages = {10},
-keywords = {image-grounded dialogue, contrastive learning, multimodal fusion, zero resource},
-location = {Ottawa ON, Canada},
-series = {MM '23}
+  author = {Zhang, Bo and Wang, Jian and Ma, Hui and Xu, Bo and Lin, Hongfei},
+  title = {ZRIGF: An Innovative Multimodal Framework for Zero-Resource Image-Grounded Dialogue Generation},
+  year = {2023},
+  isbn = {9798400701085},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  url = {https://doi.org/10.1145/3581783.3611810},
+  doi = {10.1145/3581783.3611810},
+  booktitle = {Proceedings of the 31st ACM International Conference on Multimedia},
+  pages = {5464–5473},
+  numpages = {10},
+  location = {Ottawa ON, Canada},
+  series = {MM '23}
 }
 ```
 
